@@ -10,14 +10,14 @@ namespace spec
 	TEST_CLASS(getSubstringSpec)
 	{
 	public:
-		
+
 		TEST_METHOD(NormalString)
 		{
 			char str[] = "abcdefgh";
 			int i = 0;
 			int j = 2;
 			int k;
-			
+
 			for (i = 0; i <= 1; i++){
 				for (j = 3; j < 7; j++){
 					char *new_str = get_sub_string(str, i, j);
@@ -32,7 +32,7 @@ namespace spec
 				}
 			}
 		}
-		
+
 		TEST_METHOD(NULLsubstring)
 		{
 			char *str = NULL;

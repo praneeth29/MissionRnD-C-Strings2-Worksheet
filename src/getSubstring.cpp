@@ -13,11 +13,23 @@ OUTPUT2:will Code
 NOTES: Check Null Strings ,Include stddef for NULL if needed.Create a New string and return it ,dont modfiy
 original String
 */
-
+#include<stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
-
+        char val[100];
 char * get_sub_string(char *str, int i, int j){
+    if(i>j || str==NULL )
+        return NULL;
+    else
+    {
 
-    return NULL;
+        int l=i;
+        while(str[l]!='\0' && l<=j)
+        {
+                val[l-i]=str[l];
+                l++;
+        }
+        val[l]='\0';
+        return val;
+    }
 }
